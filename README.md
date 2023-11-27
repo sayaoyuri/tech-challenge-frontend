@@ -1,8 +1,33 @@
-# React + Vite
+# Technical Challenge - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Technical challenge made in interest of a professional developer position.
 
-Currently, two official plugins are available:
+## Deploy
+Production URL: https://tech-challenge-frontend.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Documentation
+
+## Technologies
+This project was built using:
+
+- Node (Version 18.16.1);
+- React - Node framework for building frontend;
+- Styled Components - CSS framework for building React components;
+- ESlint + Prettier - Tools for mantaning code pattern.
+
+## How to run for development
+
+1. Clone this repository
+2. Install all dependencies
+
+```bash
+npm install
+```
+
+3. Configure the `.env` based on the `.env.example` file
+
+4. Run the front-end in a development environment:
+
+```bash
+npm run dev
+```
