@@ -6,6 +6,9 @@ Technical challenge made in interest of a professional developer position.
 Production URL: https://tech-challenge-frontend.vercel.app/
 
 ## Documentation
+This application allows customer's to search for their trackings records by their CPF.
+
+Case the search is successfull the application will list all of the customer's trackings and will give the opportunity to check in detail a specific tracking record.
 
 ## Technologies
 This project was built using:
