@@ -5,7 +5,6 @@ import { List, ListItem } from './TrackingListStyle';
 import ErrorMessage from '../errorMessage/ErrorMessage';
 
 export default function TrackingList({ trackings, trackingsError }) {
-	console.log(trackings);
 
 	return (
 		<List>
@@ -19,14 +18,16 @@ export default function TrackingList({ trackings, trackingsError }) {
 					trackings.length === 0 ?
 						<p>Parece que voce nao possui nenhum rastreio ainda</p>
 						:
-						trackings.map((tracking, index) => (
-							<ListItem key={tracking.id}>
-								<p>{`${index + 1}:`}</p>
-								<TrackingStatus status={tracking.trackingStatus[0]}/>
-								<CreatedAt date={tracking.createdAt}/>
-								<Link to={`/tracking/details/${tracking.id}`}>Detalhes</Link>
-							</ListItem>
-						))
+						trackings.length ?
+							trackings.map((tracking, index) => (
+								<ListItem key={tracking.id}>
+									<p>{`${index + 1}:`}</p>
+									<TrackingStatus status={tracking.trackingStatus[0]}/>
+									<CreatedAt date={tracking.createdAt}/>
+									<Link to={`/tracking/details/${tracking.id}`}>Detalhes</Link>
+								</ListItem>
+							))
+						: <></>
 			}
 		</List>
 	);

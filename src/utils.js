@@ -17,6 +17,9 @@ export function parseStatus(status) {
 	case 'CHEGOU_A_CIDADE_DE_DESTINO':
 		parsedStatus = 'Chegou à Cidade de Destino';
 		break;
+	case 'CHEGOU_A_FILIAL_DA_CIDADE':
+		parsedStatus = 'Chegou à Filial da Cidade';
+		break;
 	case 'SAIU_PARA_ENTREGA':
 		parsedStatus = 'Saiu Para Entrega';
 		break;
