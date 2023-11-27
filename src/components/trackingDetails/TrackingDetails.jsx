@@ -8,7 +8,6 @@ import ErrorMessage from '../errorMessage/ErrorMessage';
 export default function TrackingDetails() {
 	const { id } = useParams();
 	const { tracking, detailsError, detailsLoading } = useTrackingDetails(id);
-	console.log(tracking);
 
 	return (
 		<>
@@ -30,7 +29,7 @@ export default function TrackingDetails() {
 										}
 										<p>{`Transportador: ${tracking.carrier.fantasia}`}</p>
 										{
-											tracking.shipper.cnpj && <p>{`CNPJ: ${tracking.carrier.cnpj}`}</p>
+											tracking.carrier.cnpj && <p>{`CNPJ: ${tracking.carrier.cnpj}`}</p>
 										}
 									</div>
 									<div>
